@@ -1,0 +1,149 @@
+
+<!-- This will be the page for the interface with the back end
+    There needs to be a spot for a video and the content needs to be changed --> 
+<!DOCTYPE html>
+
+<html lang="en" style="" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-industry-n7-active wf-industry-i7-active wf-industry-n4-active wf-industry-i4-active wf-active gr__mackenziechild_me"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="google-site-verification" content="Hs_Gxu4vJcm_pfEMWjOEYSzbBm_KF-eT7c7ferksL28">
+	
+
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="blog/reset.css">
+	<link rel="stylesheet" href="blog/nav.css">
+	<script async="" src="blog/analytics.js"></script><script src="./blog/modernizr.js"></script>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="pingback" href="https://mackenziechild.me/xmlrpc.php">
+
+	
+	<script src="blog/jquery-2.1.1.js"></script>
+	<script src="blog/main.js"></script> <!-- Resource jQuery -->
+	<script src="blog/qul4etr.js"></script>
+	<style type="text/css">.tk-industry{font-family:"industry",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-industry-n7;src:url(https://use.typekit.net/af/0a6fc4/0000000000000000000171f0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff2"),url(https://use.typekit.net/af/0a6fc4/0000000000000000000171f0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff"),url(https://use.typekit.net/af/0a6fc4/0000000000000000000171f0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-industry-i7;src:url(https://use.typekit.net/af/961160/0000000000000000000171f1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff2"),url(https://use.typekit.net/af/961160/0000000000000000000171f1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff"),url(https://use.typekit.net/af/961160/0000000000000000000171f1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:tk-industry-n4;src:url(https://use.typekit.net/af/24989c/0000000000000000000171f2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff2"),url(https://use.typekit.net/af/24989c/0000000000000000000171f2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff"),url(https://use.typekit.net/af/24989c/0000000000000000000171f2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-industry-i4;src:url(https://use.typekit.net/af/f0e2ea/0000000000000000000171f3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff2"),url(https://use.typekit.net/af/f0e2ea/0000000000000000000171f3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff"),url(https://use.typekit.net/af/f0e2ea/0000000000000000000171f3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("opentype");font-weight:400;font-style:italic;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<title>Find Parking</title>
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Mackenzie Child » Feed" href="https://mackenziechild.me/feed/">
+<link rel="alternate" type="application/rss+xml" title="Mackenzie Child » Comments Feed" href="https://mackenziechild.me/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/mackenziechild.me\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+	
+}
+</style>
+<link rel="stylesheet" id="main-css" href="blog/style.css" type="text/css" media="all">
+</style>
+		
+<style type="text/css">@font-face{font-family:industry;src:url(https://use.typekit.net/af/0a6fc4/0000000000000000000171f0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff2"),url(https://use.typekit.net/af/0a6fc4/0000000000000000000171f0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff"),url(https://use.typekit.net/af/0a6fc4/0000000000000000000171f0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:industry;src:url(https://use.typekit.net/af/961160/0000000000000000000171f1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff2"),url(https://use.typekit.net/af/961160/0000000000000000000171f1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff"),url(https://use.typekit.net/af/961160/0000000000000000000171f1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:industry;src:url(https://use.typekit.net/af/24989c/0000000000000000000171f2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff2"),url(https://use.typekit.net/af/24989c/0000000000000000000171f2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff"),url(https://use.typekit.net/af/24989c/0000000000000000000171f2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:industry;src:url(https://use.typekit.net/af/f0e2ea/0000000000000000000171f3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff2"),url(https://use.typekit.net/af/f0e2ea/0000000000000000000171f3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("woff"),url(https://use.typekit.net/af/f0e2ea/0000000000000000000171f3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&token=GkChqcfZaAa8RuKIB6vc9WhOcymfmCEzbXERyL20Bao0Vx3GGBoADHCDFOq7hrGIuDYcSNnsdW9V3SMH5z3qhiPHu%2F8DLMt4U7OLdlNQKmYlnv6UpUvEDjw%2FE2OkJkbXhWmdmIL5A0dp1YqJI5tcCAXc0pcFZJOTk3codPAjfRXXPmqt%2BOdvGa7d%2Fkt4GZ3Y) format("opentype");font-weight:400;font-style:italic;}</style><script type="text/javascript" src="./blog/jquery.min.js"></script></head>
+
+<body class="page page-id-32 page-template page-template-template-page-single-column page-template-template-page-single-column-php" data-gr-c-s-loaded="true">
+<main style="background:#efbe66 url(&#39;https://mackenziechild.me/wp-content/themes/mackenziechild_2016/images/topo_bg.png&#39;); background-size: 65%; padding-bottom: 2rem; ">
+	<header class="header">
+
+		<header class="header">
+
+		<a href="index.html" alt="Moko Travel"><img src="images/logo.svg" alt="Moko Travel Logo"></a>
+		
+			<nav>
+				<a href="project.html">About The Project</a>
+				<a href="process.html">The Process</a>
+				<a href="team.html">Our Team</a>
+				<a href="worked.html">Our Conclusion</a>
+			</nav>
+		
+	</header><!-- end header -->
+		
+		
+	</header><!-- end header -->
+
+	<div class="wrapper">
+  <div id="page_wrapper" class="design_for_developers">
+    <div class="inner">
+      
+        <p><img src="blog/learn_design_icon.svg" alt="Learn Design" class="design_icon"></p>
+<h1><span>Find</span> Parking</h1>
+<h2>Experience more adventure with our premium membership.</h2>
+<p><strong>Having a well thought out &amp; beautiful trip isn't all you'll need for an amazing adventure.</strong> With Mako Pass, do and earn more.</p>
+<blockquote>
+<p>The best possible experience from Mako Travel right at your fingertips.</p>
+</blockquote>
+<p><strong>With Mako Pass you'll earn:</strong></p>
+<ul>
+<li><i class="fa fa-check"></i> Reward points for each travel destination.</li>
+<li><i class="fa fa-check"></i> First class access to new rooms.</li>
+<li><i class="fa fa-check"></i> Exclusive rooms not available to free users.</li>
+<li><i class="fa fa-check"></i> Extra amenities.</li>
+<li><i class="fa fa-check"></i> And much, much more.</li>
+
+</ul>
+<p><strong>The project summary will go here</strong> If you’re interested in getting a Mako Pass right away, select the checkbox below and you’ll also recieve a 7-day free trial.</p>
+
+      
+      <script src="blog/CKJS4.js"></script>
+
+  </div>
+
+  <div style="padding-top:4rem;"></div>
+
+</div>
+</main>
+
+<a href="worked.html#cd-nav" class="cd-nav-trigger">Menu
+  <span class="cd-nav-icon"></span>
+
+  <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+    <circle fill="transparent" stroke="#3C3F4F" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+  </svg>
+</a>
+
+<div id="cd-nav" class="cd-nav">
+  <div class="cd-navigation-wrapper">
+    <div class="cd-half-block">
+      <h2>Where To?</h2>
+
+      <nav>
+        <ul class="cd-primary-nav">
+          <ul class="cd-primary-nav">
+          <li><a href="parking.html">Find Parking<span>Look at info on how to find your open spot</span></a></li>
+          <li><a href="project.html">About The Project<span>An in-depth scope on the main idea behind the parking project</span></a></li>
+          <li><a href="team.html">Our Team<span>Look at the faces and names behind the parking project</span></a></li>
+          <li><a href="process.html">The Process<span>Find at our approach behind the app</span></a></li>
+          <li><a href="worked.html">Our Conclusion<span>Find out what worked and what failed along the way </span></a></li>
+        </ul>
+        </ul>
+      </nav>
+    </div>
+
+    
+  </div> <!-- .cd-navigation-wrapper -->
+</div> <!-- .cd-nav -->
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53784739-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript" src="features/comment-reply.min.js"></script>
+<script type="text/javascript" src="features/wp-embed.min.js"></script>
+
+
+</body></html>

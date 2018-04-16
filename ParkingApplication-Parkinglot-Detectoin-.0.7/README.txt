@@ -1,0 +1,1 @@
+There are a few false positives.  This has nothing to do with the code or yaml file.  Considerations for future development: process to remove shadows from each frame pass, process to account for change in illumination (sun), better and higher angles for cameras, code that accounts for matted black objects.  Otherwise code works great.  
